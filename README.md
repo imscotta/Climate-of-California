@@ -19,18 +19,9 @@ We are going to combine the data to analyze the relationships between the drough
 * We loaded our merged dataframe into a single SQL table in PostgreSQL.
 * We ensured the column names matched the columns created in our Python notebook to validate the load of the dataframe into PostgreSQL.
 
-### Analyze:
-* The LEFT JOIN accomplished listing all of the fires.
-* Null drought data on the right side of the table indicted that there were no drought conditions during some of the fires in the dataframe.
-
 ## Findings
 * There were a large number of fire incidents that occurred without a corresponding drought conditions, which we found surprising.
-  * 9,016 total fires in the database.
-  * The earliest reported drought condition in the data is from 2000.
   * 6,791 fires occurred in 2000 or after, and 75% of these fires had a corresponding drought condition.
-  * The earliest fire in the dataset is from 1912.
 
-### Next Steps
-* Analyze if there is a correlation between the time of the year (months, specific dates) have a higher likelihood to have a fire with a corresponding drought condition.
-* Look deeper into the drought conditions by county to see what counties have been affected the most by droughts and if there are larger than average fires.
-* The analysis could also be expanded to look at other states in the US or countries around the world.
+<img align="center" src="Images/California Fires and Drought Conditions.png" width="500" />
+<img align="center" src="Images/Fires Overview.png" width="500" />
